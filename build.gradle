@@ -49,7 +49,7 @@ jacocoTestCoverageVerification {
     violationRules {
         rule {
             element = 'CLASS'
-            includes = ['be.cegeka.X.application.*', 'be.cegeka.X.domain.*']
+            includes = ['be.cegeka.selfEval5.application.*', 'be.cegeka.selfEval5.domain.*']
             limit {
                 counter = 'BRANCH'
                 minimum = 0.7
