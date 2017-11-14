@@ -10,9 +10,6 @@ public class HighwayService {
     @Inject
     private HighwayRepository highwayRepository;
 
-    public HighwayService() {
-    }
-
     public List<Highway> getAllHighways() {
         return highwayRepository.getAllHighways();
     }
