@@ -1,5 +1,9 @@
 package be.cegeka.selfEval5.domain.highways;
+
+import be.cegeka.selfEval5.domain.incidents.Incident;
+
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "HIGHWAYS")
@@ -12,6 +16,9 @@ public class Highway {
     private String name;
     @Column(name = "DISTANCE")
     private int distance;
+    @OneToMany
+    @JoinColumn(name = "highway_id")
+    private List<Incident> incidents;
 
     public Highway() {
     }
