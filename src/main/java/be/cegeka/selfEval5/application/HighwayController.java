@@ -5,7 +5,6 @@ import be.cegeka.selfEval5.domain.highways.HighwayService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
 import javax.inject.Inject;
 import javax.transaction.Transactional;
 import java.util.List;
