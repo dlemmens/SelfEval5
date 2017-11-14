@@ -17,10 +17,10 @@ public class IncidentController {
     @Inject
     private IncidentService incidentService;
 
-
-    public void addIncident(@RequestParam(value = "name",required = true) String name,
-                            @RequestParam(value = "type",required = true) String type,
-                            @RequestParam (value = "distance",required = true) int distance) {
-        incidentService.addIncident(name,type,distance);
+    @PostMapping
+    public void addIncident(@RequestParam(value = "name", required = true) String name,
+                            @RequestParam(value = "type", required = true) String type,
+                            @RequestParam(value = "distance", required = true) int distance) {
+        incidentService.addIncident(name, type, distance);
     }
 }

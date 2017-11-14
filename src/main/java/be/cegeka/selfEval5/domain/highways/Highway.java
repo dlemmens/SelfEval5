@@ -16,7 +16,7 @@ public class Highway {
     private String name;
     @Column(name = "DISTANCE")
     private int distance;
-    @OneToMany
+    @OneToMany(cascade = CascadeType.ALL)
     @JoinColumn(name = "highway_id")
     private List<Incident> incidents;
 
