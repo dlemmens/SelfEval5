@@ -13,4 +13,8 @@ public class HighwayService {
     public List<Highway> getAllHighways() {
         return highwayRepository.getAllHighways();
     }
+
+    public void addIncident(int incidentId) {
+
+    }
 }

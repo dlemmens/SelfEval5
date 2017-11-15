@@ -27,4 +27,12 @@ public class HighwayControllerTest {
         highwayController.getAllHighways();
         verify(highwayService).getAllHighways();
     }
+
+//    work in progress
+//    nog methode maken om Highway object vast te krijgen voor ik incident kan adden aan incident
+//    @Test
+//    public void whenAddingAIncident_shouldActivateHighwayService() throws Exception {
+//        highwayController.addIncident();
+//        verify(highwayService).addIncident();
+//    }
 }
